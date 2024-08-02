@@ -3,16 +3,23 @@
 link to access :- https://debasish-task-management-website.vercel.app/
 
     --TECHNOLOGY USED
+    --Front-End
         - HTML5
         - CSS3
         - REACT.JS
         - JAVASCRIPT
-    
+
+    --Back-End
+        -Express.js
+        -node.js
+        -cloud-mongoDB (Atlas)
+        
     --FRAMEWORK USED
         - TAILWIND-CSS
         - DAISYUI
     
     --VARIOUS NPMS (  npm install --- )
+    --For Frontend-
         - tailwindcss
         - postcss
         - autoprefixer
@@ -21,7 +28,15 @@ link to access :- https://debasish-task-management-website.vercel.app/
         - react-icons
         - react-hook-form
         - daisyui
-    
+        - axios
+
+    --For Backend-
+        - cors
+        - dotenv
+        - express
+        - mongoose
+        - nodemon
+        
     --VERSION CONTROL TOOL / PLATFORM
         - git
         - Github
@@ -67,7 +82,17 @@ link to access :- https://debasish-task-management-website.vercel.app/
 
   ![Screenshot 2024-07-27 205801](https://github.com/user-attachments/assets/234d228f-e865-47e6-9ade-6d21f796279a)
 
-
+# New Functionality
+    -- Filter Task Functionality
+        - ALL
+        - Complete
+        - Incomplete
+        
+  ![Screenshot 2024-08-02 112925](https://github.com/user-attachments/assets/89cbf6e1-4dec-4bd8-b9e5-b5a0c9e2335d)
+  
+    -- Task Not Found Page
+    
+  ![Screenshot 2024-08-02 112950](https://github.com/user-attachments/assets/df623329-add0-4975-821c-f71b75cc05d8)
 
 
   ### SHOW YOUR LOVE AND SUPPORT ❤️ 
