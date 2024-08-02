@@ -197,10 +197,10 @@ function TaskList() {
               key={task._id}
               className="relative w-52 h-52 p-3 border border-x-cyan-600 rounded shadow-lg"
             >
-              <h3 className="text-[#48bbd2] font-semibold text-xl mb-2">
+              <h3 className="text-[#48bbd2] font-semibold text-xl mb-2 max-w-xs overflow-x-auto whitespace-nowrap p-2">
                 {task.title}
               </h3>
-              <p className="mt-2 font-sans text-blue-200">{task.description}</p>
+              <p className="mt-2 font-sans custom-scrollbar text-blue-200 h-20 overflow-y-auto border-gray-300 p-2">{task.description}</p>
               <button
                 onClick={() => handleStatus(task)}
                 className="absolute bottom-2 left-1 rounded-full text-2xl font-bold px-2 py-2"
