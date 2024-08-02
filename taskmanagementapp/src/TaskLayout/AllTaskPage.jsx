@@ -6,6 +6,7 @@ import axios from "axios";
 import { FaEdit } from "react-icons/fa";
 import NoTaskFound from "../components/NoTaskFound";
 import { RiEditCircleFill } from "react-icons/ri";
+import { baseUrl } from "../urls";
 
 function TaskList() {
   const [tasks, setTasks] = useState([]);
@@ -18,7 +19,7 @@ function TaskList() {
     const fetchTasks = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:2024/task/api/v/show-tasks"
+          `${baseUrl}/task/api/v/show-tasks`
         );
         if (response.data.success) {
           // console.log('Fetched tasks:', response.data.alltasks);
@@ -46,7 +47,7 @@ function TaskList() {
     //   setTasks(updatedTasks);
     try {
       const response = await axios.delete(
-        `http://localhost:2024/task/api/v/delete-tasks/${task._id}`
+        `${baseUrl}/task/api/v/delete-tasks/${task._id}`
       );
       // console.log(response)
       if (response.data.success) {
@@ -68,7 +69,7 @@ function TaskList() {
 
     try {
       const response = await axios.patch(
-        `http://localhost:2024/task/api/v/update-status/${task._id}`,
+        `${baseUrl}/task/api/v/update-status/${task._id}`,
         { status: newStatus }
       );
       if (response.data.success) {

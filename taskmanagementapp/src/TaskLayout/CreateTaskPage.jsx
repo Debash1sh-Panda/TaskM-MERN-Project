@@ -19,7 +19,7 @@ function CreateTaskPage() {
         description: data.description,
       };
       await axios.post(
-        "http://localhost:2024/task/api/v/create-task",
+        `${baseUrl}/task/api/v/create-task`,
         taskdata
       );
       toast.success("Task Added Successfully", {
